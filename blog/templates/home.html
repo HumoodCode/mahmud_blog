@@ -1,0 +1,40 @@
+{% load static %}
+<html>
+    <head>
+        <title>
+            My Website
+        </title>
+        <link href= "{% static 'blog/css/mood.css' %}" rel= "stylesheet" >
+    </head>
+    
+    <body>
+        
+        <h1>Good Moring {{name}}</h1>
+        <h4>Age: {{Age}}</h4>
+        <h6>The time is: {{yanzu}}</h6>
+        <table border="1">
+            <tr style="background-color:#a4ad51">
+                <th>COURSES</th>
+                <th>LECTURER</th>
+                <th>COURSE_TITLE</th>
+            </tr> 
+            <tr style="background-color:#5b5177">
+                <td>CSC301</td>
+                <td>idris
+                    <img src="{% static 'blog/images/Fairiya 20171030_090358.jpg' %}" style="height: 5%; width: 5%;" >
+                </td>
+                <td>structured programing</td>
+            </tr>
+            <tr style="background-color: rgb(150, 117, 75);">
+                <td>CSC305</td>
+                <td>DR jh yakubu</td>
+                <td>operating system II</td>
+            </tr>
+        </table>
+
+        <img src="{% static 'blog/images/Fairiya 20171030_090358.jpg' %}" style="height: 70%; width: 50%;" />
+    
+        
+
+    </body>
+</html>
