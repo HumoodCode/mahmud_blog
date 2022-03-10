@@ -25,6 +25,6 @@ urlpatterns = [
     path('k/', homeView),
 
     path("blog/post/<pk>/", post_details, name="post-details"),
-    path('',index_blog),
+    path('',index_blog, name="blog-home"),
 ]
 
